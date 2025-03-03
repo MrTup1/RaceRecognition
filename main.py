@@ -8,9 +8,9 @@ cap = cv2.VideoCapture(0)
 counter = 0
 face_match = False
 race = "Alien"
-referenceImg = cv2.imread("reference.jpg")
+#referenceImg = cv2.imread("reference.jpg")
 
-def checkFace(frame): # Checks if face in webcam matches an input image
+"""def checkFace(frame): # Checks if face in webcam matches an input image
     global face_match
     try:
         if DeepFace.verify(frame, referenceImg.copy())['verified']:
@@ -18,7 +18,7 @@ def checkFace(frame): # Checks if face in webcam matches an input image
         else:
             face_match = False
     except ValueError:
-        face_match = False
+        face_match = False"""
 
 def checkRace(frame): #Checks for the highest probable race in webcam
     global race
